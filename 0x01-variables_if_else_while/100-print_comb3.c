@@ -10,27 +10,29 @@
 
 int main(void)
 {
-	int digit = 0, i=1;
+	int digit = 0, i = 1;
 
 	while (digit <= 8)
 	{
-    for( ; i<=9 ; )
-    {
-		putchar(digit + 48);
-                putchar(i + 48);
-
-		if (digit != 8)
+		for( ; i <= 9 ; )
 		{
+			putchar(digit + 48);
+                        putchar(i + 48);
+
+		        if (digit != 8)
+		        {
 			putchar(',');
 			putchar(' ');
+		        }
+			 i++;
 		}
-
-		
-      i++;
-	}
-    ++digit;
-  }
+                         ++digit;
+       }
 	putchar('\n');
 
 	return (0);
-}
+}	
+
+		
+     
+	
