@@ -3,31 +3,36 @@
 /**
  * main - Entry point
  *
- * Description: print 0, 1, - 9
+ * Description: print all possible different
+ *           combinations of two digits.
  *
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	int digit = 0, i = 1;
+	int digit1 = 0, digit2;
 
-	while (digit <= 8)
+	while (digit1 <= 9)
 	{
-		while(i <= 9)
+		digit2 = 0;
+		while (digit2 <= 9)
 		{
-			putchar(digit + 48);
-                        putchar(i + 48);
+			if (digit1 != digit2 && digit1 < digit2)
+			{
+				putchar(digit1 + 48);
+				putchar(digit2 + 48);
 
-		        if (digit+i != 17)
-		        {
-			putchar(',');
-			putchar(' ');
-		        }
-			 i++;
+				if (digit1 + digit2 != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			++digit2;
 		}
-                         ++digit;
-       }
+		++digit1;
+	}
 	putchar('\n');
 
 	return (0);
