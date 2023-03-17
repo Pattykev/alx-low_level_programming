@@ -12,14 +12,14 @@ int main(void)
 {
 	int digit = 0, i=1;
 
-	while (digit <= 9)
+	while (digit <= 8)
 	{
-    for(; i<=9 ; i++)
+    for( ; i<=9 ; )
     {
 		putchar(digit + 48);
-    putchar(i + 48);
+                putchar(i + 48);
 
-		if (digit != 9)
+		if (digit != 8)
 		{
 			putchar(',');
 			putchar(' ');
