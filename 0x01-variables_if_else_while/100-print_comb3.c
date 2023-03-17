@@ -14,7 +14,7 @@ int main(void)
 
 	while (digit <= 8)
 	{
-		for( ; i <= 9 ; )
+		while(i <= 9)
 		{
 			putchar(digit + 48);
                         putchar(i + 48);
