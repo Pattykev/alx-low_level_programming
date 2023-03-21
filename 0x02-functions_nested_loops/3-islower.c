@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * _islower - print if the number is a lower character
- * c the parameter
+ * @c the parameter
  *           
  *
  * Return: Always 0 (Success)
