@@ -10,11 +10,13 @@
 
 int print_last_digit(int c)
 {
-int lastDigit;
-if(n < 0)
-{
-lastDigit = (-1 * n) % 10;  
-}
-lastDigit = (-1 * n) % 10; 
-return (lastDigit);
+      int lastDigit;
+  
+      if(n < 0)
+      {
+          lastDigit = (-1 * n) % 10;  
+      }
+  
+      lastDigit = (-1 * n) % 10; 
+      return (lastDigit);
 }  
