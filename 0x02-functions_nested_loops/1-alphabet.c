@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include"main.h"
 
 
 /**
@@ -11,11 +11,11 @@
 
 int main(void)
 {
-	char n='a';
+	int n= 96;
 
-	while(n <= 'z')
+	while(n <= 122)
   	{
-		_putchar(n);
+		_putchar(n + 1);
                 n++;
   	}
 	_putchar('\n');
