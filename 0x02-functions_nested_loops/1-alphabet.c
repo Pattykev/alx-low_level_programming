@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
 */
 
-int main(void)
+void print_alphabet()
 {
 	int n= 96;
 
@@ -20,5 +20,6 @@ int main(void)
   	}
 	_putchar('\n');
 
-	return (0);
+
+
 }
