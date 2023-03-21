@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: print if the number is a lower character
+ * _islower - print if the number is a lower character
+ * c the parameter
  *           
  *
  * Return: Always 0 (Success)
@@ -19,4 +20,4 @@ int _islower(int c)
       {
             return (0);
       }  
-}
+}      
