@@ -1,12 +1,13 @@
 #include"main.h"
 
 /**
- * main - Entry point
+ * print_sign - print + if n is greater than zero,
+ *             0 if n is zero and - if n is less
+ *             than zero.
  *
- * Description: print if the number is a lower character
- *           
+ * @n: takes integer type input for function.
  *
- * Return: Always 0 (Success)
+ * Return: 1 if +, 0 if 0 and -1 if -
 */
 
 int print_sign(int n)
