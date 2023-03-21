@@ -11,13 +11,14 @@
 
 int main(void)
 {
-	int n=97;
+	char n='a';
 
-	while(n <= 122)
+	while(n != 'z')
   {
 		putchar(n);
-    n++;
+                n++;
   }
+	putchar('\n');
 
 	return (0);
 }
