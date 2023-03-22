@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	unsigned long cal = 2, i, a, num = 1, sum = 0;
+	unsigned long cal = 2, i, a, num = 1, sum = 2;
 
 	for (i = 1; i <= 48; i++)
 	{
