@@ -14,12 +14,12 @@ int main(void)
 	unsigned long cal = 2, i, a, num = 1;
 
 	printf("%lu, %lu, ", num, cal);
-	for (i = 1; i <= 98; i++)
+	for (i = 1; i <= 96; i++)
 	{
 		a = num;
 		num = cal;
 		cal += a;
-		if (i < 98)
+		if (i < 96)
 			printf("%lu, ", cal);
 		else
 			printf("%lu", cal);
