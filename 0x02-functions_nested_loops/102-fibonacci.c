@@ -18,6 +18,7 @@ int main(void)
 	{
 		num = cal;
 		cal += num;
+		printf("%d, ", cal);
 	}
 	printf("\n");
 	return (0);
