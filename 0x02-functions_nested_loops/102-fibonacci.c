@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	unsigned long cal = 2, i, a, num = 1;
+	unsigned long cal = 1, i, a, num = 1;
 
 	printf("%lu, %lu, ", num, cal);
 	for (i = 1; i <= 48; i++)
