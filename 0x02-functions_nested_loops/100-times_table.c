@@ -28,8 +28,10 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 				else if (mult >= 10 && mult <= 99)
+				{	
 					_putchar(' ');
 					_putchar((mult / 10) + 48);
+				}
 				else
 				{
 					_putchar((mult / 100) + 48);
