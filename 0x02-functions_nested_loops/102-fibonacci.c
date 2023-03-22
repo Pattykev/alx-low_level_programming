@@ -14,15 +14,15 @@ int main(void)
 	int cal = 2, i, a, num = 1;
 
 	printf("%d, %d, ", num, cal);
-	for (i = 1; i <= 47; i++)
+	for (i = 1; i <= 48; i++)
 	{
 		a = num;
 		num = cal;
 		cal += a;
-		if (i < 47)
-			printf("%d, ", cal);
+		if (i < 48)
+			printf("%lu, ", cal);
 		else
-			printf("%d", cal);
+			printf("%lu", cal);
 	}
 	printf("\n");
 	return (0);
