@@ -13,7 +13,7 @@ int main(void)
 {
 	unsigned long cal = 2, i, a, num = 1;
 
-	printf("%d, %d, ", num, cal);
+	printf("%lu, %lu, ", num, cal);
 	for (i = 1; i <= 48; i++)
 	{
 		a = num;
