@@ -32,9 +32,9 @@ void print_times_table(int n)
 				{	_putchar((mult / 100) + 48);
 					_putchar(((mult / 10) % 10) + 48);
 				}
-				_putchar((mult % 10) + 48);		
+				 _putchar((mult % 10) + 48);		
 			}
-		 _putchar('\n');	
+		 	_putchar('\n');	
 		}
 	}
 }
