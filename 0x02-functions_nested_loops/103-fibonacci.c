@@ -13,12 +13,12 @@ int main(void)
 {
 	unsigned long cal = 2, i, a, num = 1, sum = 4;
 
-	for (i = 1; i <= 26; i++)
+	for (i = 1; i <= 48; i++)
 	{
 		a = num;
 		num = cal;
 		cal += a;
-		if (cal % 2 == 0)
+		if (cal % 2 == 0 && cal < 4000000)
 			sum += cal;
 	}
 	printf("%lu\n", sum);
