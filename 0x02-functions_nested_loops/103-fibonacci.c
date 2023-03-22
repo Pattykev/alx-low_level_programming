@@ -21,6 +21,6 @@ int main(void)
 		if (cal % 2 == 0)
 			sum += cal;
 	}
-	printf("%d\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
