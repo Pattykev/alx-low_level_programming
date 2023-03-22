@@ -25,18 +25,15 @@ void print_times_table(int n)
 				{
 					_putchar(' ');
 					_putchar(' ');
-				}
-				else if (mult >= 10 && mult <= 99)
+				} else if (mult >= 10 && mult <= 99)
 				{	_putchar(' ');
 					_putchar((mult / 10) + 48);
-				} 
-				else
+				} else
 				{	_putchar((mult / 100) + 48);
 					_putchar(((mult / 10) % 10) + 48);
 				}
 				_putchar((mult % 10) + 48);		
-			}
-		_putchar('\n');	
+			} _putchar('\n');	
 		}
 	}
 }
