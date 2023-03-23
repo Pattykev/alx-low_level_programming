@@ -1,13 +1,10 @@
-#include "main.h"
-
 /**
- * _isupper - if a number is a upper or lower
+ * _isupper - check if c is upper
  *
- * @c: parameter
+ * @c: input for alphabet
  *
- * Return: 1 if upper and 0 if lower
- *
- */
+ * Return: 1 if its uppercase, 0 if not
+*/
 
 int _isupper(int c)
 {
