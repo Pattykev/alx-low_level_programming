@@ -1,5 +1,4 @@
 #include"main.h"
-#include"main.h"
 
 /**
  * print_most_numbers - print 0 - 9 apart
@@ -8,17 +7,15 @@
  * Return: Always 0 (Success)
 */
 
-
 void print_most_numbers(void)
 {
-	int num = 0;
+	int num;
 
-	do {
+	for (num = 0; num <= 9; ++num)
+	{
 		if (num == 2 || num == 4)
 			continue;
-		else
-			_putchar(num + 48);
-		num++;
-	} while (num >= 0 && num <= 9);
+		_putchar(num + 48);
+	}
 	_putchar('\n');
 }
