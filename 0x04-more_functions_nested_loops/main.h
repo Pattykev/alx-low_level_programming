@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int _issupper(int c);
+int _isupper(int c);
 int _isdigit(int c);
 
 #endif
