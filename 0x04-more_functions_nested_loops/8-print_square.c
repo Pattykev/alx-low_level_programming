@@ -7,7 +7,7 @@
  *     should be printed per size
 */
 
-void print_size(int size)
+void print_square(int size)
 {
 	int postn, space;
 
