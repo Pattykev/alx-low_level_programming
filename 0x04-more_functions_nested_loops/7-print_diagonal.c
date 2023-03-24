@@ -1,4 +1,4 @@
-#include ""main.h"
+#include "main.h"
 
 /**
  * print_diagonal - enter point of the functions
@@ -19,7 +19,7 @@ void print_diagonal(int n)
 		{
 			_putchar(' ');
 		}
-    _putchar('\');
+   		 _putchar(92);
 	}
 	_putchar('\n');
 }
