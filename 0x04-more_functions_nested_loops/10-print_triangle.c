@@ -9,7 +9,7 @@
 
 void print_triangle(int size)
 {
-	int postn, space, diez;
+	int postn, space;
 
 	if (size <= 0)
 		_putchar('\n');
@@ -17,11 +17,12 @@ void print_triangle(int size)
 	{
 		for (postn = 1; postn <= size; postn++)
 		{
-			for (space = size; space > (size-postn); space--)
-				_putchar(' ');
-     		        for (diez = 0; diez < postn; diez++)
-				_putchar(35);
-			_putchar('\n');
+			for (space = 1; space <= size; space++)
+				if (postn + space <= size)
+					_putchar(' ');
+				else
+					_putchar(35);
+				_putchar('\n');
 		}
 	}
 }
