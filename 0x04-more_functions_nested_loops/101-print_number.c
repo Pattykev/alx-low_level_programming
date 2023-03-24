@@ -2,6 +2,7 @@
 
 /**
  * print_number - Prints an integer.
+ * since we don't known the lenght of function we can use recursive call of the print_number since the number has two digit
  *
  * @n: The integer to be printed.
 */
