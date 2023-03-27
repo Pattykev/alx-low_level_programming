@@ -14,3 +14,13 @@ void swap_int(int *a, int *b)
   *b = *a - *b;
   *a = *a - *b; 
 }
+
+
+void swap_int(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
