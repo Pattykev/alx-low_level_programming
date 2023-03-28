@@ -1,3 +1,8 @@
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+  
 /**
  * randomPasswordGeneration - generate a valid password
  * @N: The length of the password
@@ -7,15 +12,6 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
-// C program for the above approach
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-  
-// Function to randomly generates password
-// of length N
 
 void randomPasswordGeneration(int N)
 {
