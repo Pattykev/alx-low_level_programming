@@ -16,12 +16,6 @@ void randomPasswordGeneration()
 {
     /* Initialize counter */
     int i = 0;
-  
-    int randomizer = 0;
-  
-    /* Seed the random-number generator */
-    /* with current time so that the numbers will be different every time*/
-    srand((unsigned int)(time(NULL)));
     /*Array of numbers*/
     char numbers[] = "0123456789";
     /* Array of small alphabets */
@@ -32,6 +26,10 @@ void randomPasswordGeneration()
     char symbols[] = "!@#$^&*?";
     /* Stores the random password */
     char password[8];
+    int randomizer = 0;
+    /* Seed the random-number generator */
+    /* with current time so that the numbers will be different every time*/
+    srand((unsigned int)(time(NULL)));
     /* To select the randomizer inside the loop */ 
     randomizer = rand() % 4;
     /* Iterate over the range [0, 8] */
