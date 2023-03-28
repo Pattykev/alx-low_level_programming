@@ -29,7 +29,7 @@ void randomPasswordGeneration()
     /* Array of capital alphabets */
     char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
     /* Array of all the special symbols */
-    char symbols[] = "!@#$^&*?"
+    char symbols[] = "!@#$^&*?";
     /* Stores the random password */
     char password[8];
     /* To select the randomizer inside the loop */ 
