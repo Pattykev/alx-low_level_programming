@@ -30,7 +30,7 @@ void randomPasswordGeneration()
     /* Seed the random-number generator */
     /* with current time so that the numbers will be different every time*/
     srand((unsigned int)(time(NULL)));
-    /* To select the randomizer inside the loop */ 
+    /* To select the randomizer between 0 and 3 inside the loop */ 
     randomizer = rand() % 4;
     /* Iterate over the range [0, 8] */
     for (i = 0; i < 8; i++) {
