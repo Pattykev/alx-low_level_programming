@@ -1,5 +1,6 @@
 /**
- * string_toupper - a function to capitalize letters of a char
+ * string_toupper - a function to capitalize
+ *			letters of a char
  *
  * @s: pointer to char
  *
