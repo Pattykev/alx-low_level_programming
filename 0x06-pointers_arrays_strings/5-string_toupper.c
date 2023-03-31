@@ -3,7 +3,7 @@
  *
  * @s: pointer to char
  *
- * Return: nothing
+ * Return: @s
 */
 
 char *string_toupper(char *s)
