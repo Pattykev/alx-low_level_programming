@@ -23,7 +23,7 @@ char *rot13(char *s)
 				s[c] = s[c] + 13;
 				break;
 			}
-      s[c] = s[c] - 13;
+                        s[c] = s[c] - 13;
 		}
 		c++;
 	}
