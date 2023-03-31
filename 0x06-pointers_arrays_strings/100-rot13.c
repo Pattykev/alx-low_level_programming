@@ -1,29 +1,28 @@
+#include "holberton.h"
 /**
- * rot13 - a function that replace a letter with the 13th letter after it
- *
- * @s: string input
- *
- * Return: @s
-*/
-
+ * rot13 - encrypts code
+ * @s: string to encrypt
+ * Return: char value
+ */
 char *rot13(char *s)
 {
-	int i, c = 0;
+	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char part2[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
-	/*iterate values in array s*/
-	while (s[c] != '\0')
+	int i;
+	int j = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-	        if((s[c] >= 110 && s[c] <= 122) || (s[c] >= 78 && s[c] <= 90))
-           		s[c] = s[c] - 13;
-    		else
+
+		for (j = 0; part1[j] != '\0'; j++)
 		{
-			for (i = 0; i < 13 && ((s[c] >= 97 && s[c] <= 109) || (s[c] >= 65 && s[c] <= 77) ); i++)
+			if (s[i] == part1[j])
 			{
-				s[c] = s[c] + 13;
+				s[i] = part2[j];
 				break;
 			}
 		}
-		c++;
 	}
 	return (s);
 }
