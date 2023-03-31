@@ -13,8 +13,8 @@ char *string_toupper(char *s)
 	while (s[len] != '\0')
 	{
 		if (s[len] >= 97 && s[len] <= 122)
-      s[len] -= 32;
-    len++;
+      			s[len] -= 32;
+    		len++;
 	}
-  return (s);
+  	return (s);
 }
