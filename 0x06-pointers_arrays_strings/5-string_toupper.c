@@ -1,21 +1,22 @@
 /**
- * string_toupper - a function to capitalize
- *			letters of a char
+ * string_toupper - a function that changes all
+ *             lowercase letters of a string
+ *             to uppercase.
  *
- * @s: pointer to char
+ * @s : pointer to input char
  *
  * Return: @s
 */
 
 char *string_toupper(char *s)
 {
-	int  len = 0;
+	int i = 0;
 
-	while (s[len] != '\0')
+	while (s[i] != '\0')
 	{
-		if (s[len] >= 97 && s[len] <= 122)
-      			s[len] = s[len] - 32;
-    		len++;
+		if (s[i] >= 97 && s[i] <= 122)
+			s[i] = s[i] - 32;
+		i++;
 	}
-  	return (s);
+	return (s);
 }
