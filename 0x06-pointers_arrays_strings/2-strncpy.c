@@ -1,27 +1,36 @@
 /**
- * _strncpy - function that concatenates
- *          two strings.
+ * _strncpy - A function that copies a string.
  *
- * @dest: pointer to destnation input
- * @src: pointer to source input
- * @n: the number of character before the copy
+ * @dest: pointer to destination input buffer
+ * @src: pointer to source input buffer
+ * @n: bytes of @src
  *
- * Return: pointer to resulting string @dest
+ * Return: @dest
 */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int c, c2;
+	int i;
 
-	c = 0;
-	/*find the size of dest array*/
-	while (dest[c])
-		c++;
-
-	/* iterate through each src array value without the null byte*/
-	for (c2 = 0; src[c2] ; c2++)
-		/*append src[c2] to dest[c] while overwritting the null byte in dest*/
-		dest[n++] = src[c2];
+	/**
+	 * iterate through src array
+	 * where if there is no null byte
+	 * among the first n bytes of source
+	 * the string placed in dest will not be
+	 * null terminated
+	*/
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	/**
+	 * if the length of source is less than n
+	 * write additional nullbytes to dest to
+	 * ensure that a total of n bytes is written
+	*/
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 
 	return (dest);
 }
