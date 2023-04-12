@@ -18,3 +18,4 @@ int _abs(int i)
 		i = (-1) * i;
 
 	return (i);
+}
