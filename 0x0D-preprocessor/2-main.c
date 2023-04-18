@@ -1,15 +1,11 @@
-#include<stdio.h>
-#include<stdlib.h>
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
-*main - return the name of the compile function
-*@argc: the number of parameters past to the program
-*@argv: an array of parameter
-*
-*/
-
-int main(int argc __attribute__((unsed)), char *argv[])
+ * main - main file returns file name
+ * Return: returns 0 always
+ */
+int main(void)
 {
-  printf("%s\n", argv[0]);
-  return (0); 
+	printf("%s\n", __FILE__);
+	return (0);
 }
