@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 /**
 *main - return the name of the compile function
