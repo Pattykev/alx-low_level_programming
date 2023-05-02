@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
 *print_listint - prints data form a linked list
 *@h: the struct linked list
